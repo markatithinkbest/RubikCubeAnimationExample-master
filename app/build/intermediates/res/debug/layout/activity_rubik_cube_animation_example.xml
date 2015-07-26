@@ -1,0 +1,7 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+</RelativeLayout>
+<!-- From: file:/D:/002/d4/RubikCubeAnimationExample-master1/app/src/main/res/layout/activity_rubik_cube_animation_example.xml -->

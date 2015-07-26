@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+<!-- From: file:/D:/002/d4/RubikCubeAnimationExample-master1/app/src/main/res/menu/activity_rubik_cube_animation_example.xml -->
