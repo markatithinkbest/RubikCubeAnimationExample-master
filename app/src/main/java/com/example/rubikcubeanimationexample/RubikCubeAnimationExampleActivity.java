@@ -1,9 +1,12 @@
 package com.example.rubikcubeanimationexample;
-import java.util.Random;
+
 import android.app.Activity;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Window;
+
+import java.util.Random;
 public class RubikCubeAnimationExampleActivity extends Activity implements KubeRenderer.AnimationCallback {
     private GLWorld makeGLWorld()
     {
@@ -193,7 +196,14 @@ public class RubikCubeAnimationExampleActivity extends Activity implements KubeR
     }
     public void animate() {
         // change our angle of view
-        mRenderer.setAngle(mRenderer.getAngle() + 1.2f);
+//        mRenderer.setAngle(mRenderer.getAngle() + 1.2f);
+//        mRenderer.setAngle(mRenderer.getAngle() ); // fixed viewpoint from front
+        Log.d("MARK987","mRenderer.getAngle()="+mRenderer.getAngle());
+//        mRenderer.setAngle(mRenderer.getAngle() + 1.2f);
+        mRenderer.setAngle(1300f); //BETTER, ABLE TO VIEW 3 SIDES
+
+
+
         if (mCurrentLayer == null) {
             int layerID = mRandom.nextInt(9);
             mCurrentLayer = mLayers[layerID];
